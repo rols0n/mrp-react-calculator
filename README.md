@@ -14,6 +14,7 @@ npm run dev
 
 ### Tryb produkcyjny
 ```bash
+npm install
 npm run build
 npm run preview
 ```

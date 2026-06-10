@@ -1,0 +1,89 @@
+@media (max-width: 1180px) {
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: relative;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .brand,
+  .user-card {
+    margin-bottom: 0;
+  }
+
+  .sidebar-nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sidebar-nav a {
+    text-align: center;
+  }
+
+  .content-shell {
+    padding: 18px;
+  }
+
+  .page-heading,
+  .dashboard-grid,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .product-row {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .topbar-actions {
+    justify-content: flex-start;
+  }
+
+  .sidebar-nav,
+  .stat-grid,
+  .product-row,
+  .compact-row {
+    grid-template-columns: 1fr;
+  }
+
+  .page-heading > div:first-child,
+  .status-card,
+  .panel {
+    padding: 17px;
+    border-radius: 20px;
+  }
+
+  .panel-title,
+  .panel-subtitle,
+  .result-header {
+    flex-direction: column;
+  }
+
+  .page-heading h1 {
+    font-size: 1.78rem;
+  }
+
+  .result-card {
+    padding: 15px;
+  }
+
+  .result-table th:first-child,
+  .result-table td:first-child {
+    min-width: 240px;
+  }
+}
